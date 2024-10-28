@@ -1,0 +1,39 @@
+{
+    "name": "swinde/bees-gprs-product-information",
+    "description": "Produktsicherheits Information (GPRS)",
+    "type": "shopware-platform-plugin",
+    "version": "2.0.2",
+    "license": "MIT",
+    "require": {
+        "shopware/core": "~6.6.0"
+    },
+    "extra": {
+        "shopware-plugin-class": "BeesGprsProductInformation\\BeesGprsProductInformation",
+        "label": {
+            "de-DE": "Produktsicherheits Information (GPRS)",
+            "en-GB": "Produktsicherheits Information (GPRS)"
+        },
+        "description": {
+            "de-DE": "Zusatzfelder für Hersteller",
+            "en-GB": "Costum Filds for Manufacturer"
+        },
+        "manufacturerLink": {
+            "de-DE": "https://inserv.winde-ganzig.de",
+            "en-GB": "https://inserv.winde-ganzig.de"
+        },
+        "supportLink": {
+            "de-DE": "https://inserv.winde-ganzig.de",
+            "en-GB": "https://inserv.winde-ganzig.de"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "BeesGprsProductInformation\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "BeesGprsProductInformation\\Tests\\": "tests/"
+        }
+    }
+}

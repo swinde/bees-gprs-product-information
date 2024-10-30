@@ -6,13 +6,13 @@
         {% if product.manufacturer.translated.customFields.name is defined %}
             {% block beesgprs_block %}
             <h4>Herstellerangaben:</h4>
-            <p><b>{{ page.product.manufacturer.translated.customFields.bees_gprs_info_name }}</b><p>
+            <p><b>{{ page.product.manufacturer.translated.customFields.name }}</b><p>
                 <p>{{ page.product.manufacturer.translated.customFields.bees_gprs_info_street }}
                 <br> {{ page.product.manufacturer.translated.customFields.bees_gprs_info_postalCode }}
-                {{ page.product.manufacturer.translated.customFields.bees_gprs_info_city }}
-                <br>{{ page.product.manufacturer.translated.customFields.bees_gprs_info_land }}
-                <br>{{ page.product.manufacturer.translated.customFields.bees_gprs_info_email_address }}
-                <br>{{ page.product.manufacturer.translated.customFields.bees_gprs_info_phone_number }}
+                {{ page.product.manufacturer.translated.customFields.city }}
+                <br>{{ page.product.manufacturer.translated.customFields.land }}
+                <br>{{ page.product.manufacturer.translated.customFields.email_address }}
+                <br>{{ page.product.manufacturer.translated.customFields.phone_number }}
             </p>
             {% endblock %}
         {% endif %}

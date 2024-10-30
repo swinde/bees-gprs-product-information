@@ -96,7 +96,7 @@ class BeesGprsProductInformation extends Plugin
 				],
 				'relations' => [
 					[
-						'entityName' => 'product'
+						'entityName' => 'product_manufacturer'
 					]
 				]
 			]

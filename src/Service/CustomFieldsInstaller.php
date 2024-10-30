@@ -35,6 +35,66 @@ class CustomFieldsInstaller
                     'customFieldPosition' => 1
                 ]
             ],
+			[
+				'name' => 'bees_gprs_info_street',
+				'type' => CustomFieldTypes::TEXT,
+				'config' => [
+					'label' => [
+						'en-GB' => 'Street',
+						'de-DE' => 'Straße',
+					]
+				]
+			],
+			[
+				'name' => 'bees_gprs_info_postalCode',
+				'type' => CustomFieldTypes::TEXT,
+				'config' => [
+					'label' => [
+						'en-GB' => 'postalCode',
+						'de-DE' => 'Postleitzahl',
+					]
+				]
+			],
+			[
+				'name' => 'bees_gprs_info_city',
+				'type' => CustomFieldTypes::TEXT,
+				'config' => [
+					'label' => [
+						'en-GB' => 'City',
+						'de-DE' => 'Stadt',
+					]
+				]
+			],
+			[
+				'name' => 'bees_gprs_info_land',
+				'type' => CustomFieldTypes::ENTITY,
+				'config' => [
+					'label' => [
+						'en-GB' => 'Land',
+						'de-DE' => 'Land',
+					]
+				]
+			],
+			[
+				'name' => 'bees_gprs_info_email_address',
+				'type' => CustomFieldTypes::TEXT,
+				'config' => [
+					'label' => [
+						'en-GB' => 'Mail address',
+						'de-DE' => 'Mail Adresse',
+					]
+				]
+			],
+			[
+				'name' => 'bees_gprs_info_phone_number',
+				'type' => CustomFieldTypes::TEXT,
+				'config' => [
+					'label' => [
+						'en-GB' => 'Phone number',
+						'de-DE' => 'Telefonnummer',
+					]
+				]
+			]
         ]
     ];
 
@@ -56,7 +116,7 @@ class CustomFieldsInstaller
         $this->customFieldSetRelationRepository->upsert(array_map(function (string $customFieldSetId) {
             return [
                 'customFieldSetId' => $customFieldSetId,
-                'entityName' => 'product',
+                'entityName' => 'product.manufacturer',
             ];
         }, $this->getCustomFieldSetIds($context)), $context);
     }

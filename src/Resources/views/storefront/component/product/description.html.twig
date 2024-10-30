@@ -5,15 +5,34 @@
     <div class="pt1">
         {% if product.manufacturer.translated.customFields.name is defined %}
             {% block beesgprs_block %}
-            <h4>Herstellerangaben:</h4>
-            <p><b>{{ page.product.manufacturer.translated.customFields.name }}</b><p>
-                <p>{{ page.product.manufacturer.translated.customFields.bees_gprs_info_street }}
-                <br> {{ page.product.manufacturer.translated.customFields.bees_gprs_info_postalCode }}
-                {{ page.product.manufacturer.translated.customFields.city }}
-                <br>{{ page.product.manufacturer.translated.customFields.land }}
-                <br>{{ page.product.manufacturer.translated.customFields.email_address }}
-                <br>{{ page.product.manufacturer.translated.customFields.phone_number }}
-            </p>
+                <h4>Herstellerangaben:</h4>
+                    {% if product.manufacturer.translated.customFields.name is defined %}
+                        <p><b>{{ page.product.manufacturer.translated.customFields.name }}</b><p>
+                    {% endif %}
+
+                    {% if product.manufacturer.translated.customFields.street is defined %}
+                        <p>{{ page.product.manufacturer.translated.customFields.street }}
+                    {% endif %}
+
+                    {% if product.manufacturer.translated.customFields.postalCode is defined %}
+                     <br> {{ page.product.manufacturer.translated.customFields.postalCode }}
+                    {% endif %}
+
+                    {% if product.manufacturer.translated.customFields.city is defined  %}
+                        {{ page.product.manufacturer.translated.customFields.city }}
+                    {% endif %}
+
+                    {% if product.manufacturer.translated.customFields.land  is defined %}
+                        <br>{{ page.product.manufacturer.translated.customFields.city }}
+                    {% endif %}
+
+                {% if product.manufacturer.translated.customFields.email_address  is defined %}
+                    <br>{{ page.product.manufacturer.translated.customFields.email_address }}
+                {% endif %}
+                {% if product.manufacturer.translated.customFields.phone_number  is defined %}
+                    <br>{{ page.product.manufacturer.translated.customFields.phone_number }}
+                {% endif %}
+                </p>
             {% endblock %}
         {% endif %}
     </div>

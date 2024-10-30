@@ -20,7 +20,8 @@ class CustomFieldsInstaller
                 'en-GB' => 'Produktinformationen (GPRS)',
                 'de-DE' => 'Produktinformationen (GPRS)',
                 Defaults::LANGUAGE_SYSTEM => 'Mention the fallback label here'
-            ]
+				],
+				'customFieldPosition' => 0
         ],
         'customFields' => [
             [
@@ -42,7 +43,8 @@ class CustomFieldsInstaller
 					'label' => [
 						'en-GB' => 'Street',
 						'de-DE' => 'Straße',
-					]
+					],
+					'customFieldPosition' => 2
 				]
 			],
 			[
@@ -52,7 +54,8 @@ class CustomFieldsInstaller
 					'label' => [
 						'en-GB' => 'postalCode',
 						'de-DE' => 'Postleitzahl',
-					]
+					],
+					'customFieldPosition' => 3
 				]
 			],
 			[
@@ -62,17 +65,19 @@ class CustomFieldsInstaller
 					'label' => [
 						'en-GB' => 'City',
 						'de-DE' => 'Stadt',
-					]
+					],
+					'customFieldPosition' => 4
 				]
 			],
 			[
 				'name' => 'bees_gprs_info_land',
-				'type' => CustomFieldTypes::ENTITY,
+				'type' => CustomFieldTypes::SELECT,
 				'config' => [
 					'label' => [
 						'en-GB' => 'Land',
 						'de-DE' => 'Land',
-					]
+					],
+					'customFieldPosition' => 5
 				]
 			],
 			[
@@ -82,7 +87,8 @@ class CustomFieldsInstaller
 					'label' => [
 						'en-GB' => 'Mail address',
 						'de-DE' => 'Mail Adresse',
-					]
+					],
+					'customFieldPosition' => 6
 				]
 			],
 			[
@@ -92,7 +98,8 @@ class CustomFieldsInstaller
 					'label' => [
 						'en-GB' => 'Phone number',
 						'de-DE' => 'Telefonnummer',
-					]
+					],
+					'customFieldPosition' => 7
 				]
 			]
         ]

@@ -72,6 +72,17 @@ class BeesGprsProductInformation extends Plugin
 							]
 						]
 					],
+			,
+					[
+						'name' => 'land',
+						'type' => CustomFieldTypes::TEXT,
+						'config' => [
+							'label' => [
+								'en-GB' => 'Land',
+								'de-DE' => 'Land',
+							]
+						]
+					],
 
 					[
 						'name' => 'email_address',

@@ -72,7 +72,6 @@ class BeesGprsProductInformation extends Plugin
 							]
 						]
 					],
-			,
 					[
 						'name' => 'land',
 						'type' => CustomFieldTypes::TEXT,
@@ -83,7 +82,6 @@ class BeesGprsProductInformation extends Plugin
 							]
 						]
 					],
-
 					[
 						'name' => 'email_address',
 						'type' => CustomFieldTypes::TEXT,
